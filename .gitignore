@@ -1,5 +1,7 @@
-chapter03/jawiki-country.json*
-chapter04/neko.txt
+*jawiki-country.json*
+*neko.txt
+*neko.txt.mecab
+*sandbox.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
