@@ -15,7 +15,7 @@ def calc_word_frequency_with_neko(parsed_sentences):
         if '猫' in [word['surface'] for word in sentence]:
             for word in sentence:
                 if (word['pos'] not in ['記号', '助詞', '助動詞']) and (word['surface'] != '猫'):
-                    counter[word['base']] = counter.get(word['base'], 0) + 1
+                    counter[word['base']] = counter.get(word['base'], 0) + 1 # defaultdictなので`counter[word['base']] += 1で良い
     ret = sorted(
         [(word, freq) for word, freq in counter.items()],
         key=lambda e: e[1], reverse=True)

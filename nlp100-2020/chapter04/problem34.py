@@ -15,7 +15,7 @@ def get_noun_concat(parsed_sentences):
         cnt = 0
         for word in sentence:
             if word['pos'] == '名詞':
-                nouns = nouns + word['surface']
+                nouns = nouns + word['surface'] # `nouns += word['surface']` で良い
                 cnt += 1
             else:
                 if cnt >= 2:
