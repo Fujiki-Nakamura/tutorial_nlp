@@ -24,7 +24,7 @@ def parse(data):
                 'pos1': others[1],
             }
             parsed_sentence.append(d)
-        parsed_sentences.append(parsed_sentence)
+        parsed_sentences.append(parsed_sentence) # parsed_sentence != []の時のみappendの方がいいかも？
 
     return parsed_sentences
 
