@@ -2,5 +2,5 @@
 ## 準備
 ```shell
 $ pip install japanize_matplotlib
-$ mecab < neko.txt > mecab.neko.txt
+$ mecab < neko.txt > neko.txt.mecab
 ```
